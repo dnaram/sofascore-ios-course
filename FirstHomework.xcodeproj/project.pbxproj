@@ -12,6 +12,10 @@
 		4E5F502D27E6507200E43278 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E5F502C27E6507200E43278 /* Assets.xcassets */; };
 		4E5F503027E6507200E43278 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E5F502E27E6507200E43278 /* LaunchScreen.storyboard */; };
 		4E5F503827E654CE00E43278 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F503727E654CE00E43278 /* MainViewController.swift */; };
+		4EB25FE727F25A3F0001834A /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB25FE627F25A3F0001834A /* CustomTextField.swift */; };
+		4EB25FEB27F25D750001834A /* EnterPlayerNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB25FEA27F25D750001834A /* EnterPlayerNameViewController.swift */; };
+		4EB25FED27F2691D0001834A /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB25FEC27F2691D0001834A /* CustomLabel.swift */; };
+		4EB25FEF27F26C790001834A /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB25FEE27F26C790001834A /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		4E5F502F27E6507200E43278 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E5F503127E6507200E43278 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E5F503727E654CE00E43278 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4EB25FE627F25A3F0001834A /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		4EB25FEA27F25D750001834A /* EnterPlayerNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPlayerNameViewController.swift; sourceTree = "<group>"; };
+		4EB25FEC27F2691D0001834A /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		4EB25FEE27F26C790001834A /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,42 @@
 		4E5F502227E6507100E43278 /* FirstHomework */ = {
 			isa = PBXGroup;
 			children = (
+				4EB25FE327F2576B0001834A /* PresentationLayer */,
 				4E5F502327E6507100E43278 /* AppDelegate.swift */,
 				4E5F502527E6507100E43278 /* SceneDelegate.swift */,
 				4E5F502C27E6507200E43278 /* Assets.xcassets */,
 				4E5F502E27E6507200E43278 /* LaunchScreen.storyboard */,
 				4E5F503127E6507200E43278 /* Info.plist */,
-				4E5F503727E654CE00E43278 /* MainViewController.swift */,
 			);
 			path = FirstHomework;
+			sourceTree = "<group>";
+		};
+		4EB25FE327F2576B0001834A /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				4EB25FE527F2578F0001834A /* ViewControllers */,
+				4EB25FE427F257830001834A /* CustomViews */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		4EB25FE427F257830001834A /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				4EB25FE627F25A3F0001834A /* CustomTextField.swift */,
+				4EB25FEC27F2691D0001834A /* CustomLabel.swift */,
+				4EB25FEE27F26C790001834A /* CustomButton.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		4EB25FE527F2578F0001834A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4E5F503727E654CE00E43278 /* MainViewController.swift */,
+				4EB25FEA27F25D750001834A /* EnterPlayerNameViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,9 +170,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EB25FE727F25A3F0001834A /* CustomTextField.swift in Sources */,
+				4EB25FED27F2691D0001834A /* CustomLabel.swift in Sources */,
 				4E5F503827E654CE00E43278 /* MainViewController.swift in Sources */,
 				4E5F502427E6507100E43278 /* AppDelegate.swift in Sources */,
+				4EB25FEF27F26C790001834A /* CustomButton.swift in Sources */,
 				4E5F502627E6507100E43278 /* SceneDelegate.swift in Sources */,
+				4EB25FEB27F25D750001834A /* EnterPlayerNameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
