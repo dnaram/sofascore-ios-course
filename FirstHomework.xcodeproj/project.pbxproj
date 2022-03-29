@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E46A08727F30FAE004A0461 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E46A08627F30FAE004A0461 /* AboutViewController.swift */; };
 		4E5F502427E6507100E43278 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F502327E6507100E43278 /* AppDelegate.swift */; };
 		4E5F502627E6507100E43278 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F502527E6507100E43278 /* SceneDelegate.swift */; };
 		4E5F502D27E6507200E43278 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E5F502C27E6507200E43278 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E46A08627F30FAE004A0461 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		4E5F502027E6507100E43278 /* FirstHomework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstHomework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E5F502327E6507100E43278 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E5F502527E6507100E43278 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			children = (
 				4E5F503727E654CE00E43278 /* MainViewController.swift */,
 				4EB25FEA27F25D750001834A /* EnterPlayerNameViewController.swift */,
+				4E46A08627F30FAE004A0461 /* AboutViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				4E5F502427E6507100E43278 /* AppDelegate.swift in Sources */,
 				4EB25FEF27F26C790001834A /* CustomButton.swift in Sources */,
 				4E5F502627E6507100E43278 /* SceneDelegate.swift in Sources */,
+				4E46A08727F30FAE004A0461 /* AboutViewController.swift in Sources */,
 				4EB25FEB27F25D750001834A /* EnterPlayerNameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
