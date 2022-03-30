@@ -9,7 +9,7 @@ import UIKit
 
 class EnterPlayerNameViewController: UIViewController {
     
-    let textField: CustomTextField = CustomTextField(insets: UIEdgeInsets(top: 0, left: 12, bottom: 0, right: 12))
+    let textField: UITextField = UITextField()
     let messageLabel: CustomLabel = CustomLabel()
     let OKButton: CustomButton = CustomButton()
     
@@ -23,6 +23,12 @@ class EnterPlayerNameViewController: UIViewController {
         view.addSubview(messageLabel)
         view.addSubview(OKButton)
         
+        textField.textColor = .white
+        textField.attributedPlaceholder = NSAttributedString(
+            string: "Empty Player Name",
+            attributes: [NSAttributedString.Key.foregroundColor : UIColor.white]
+        )
+        
         textField.translatesAutoresizingMaskIntoConstraints = false
         messageLabel.translatesAutoresizingMaskIntoConstraints = false
         OKButton.translatesAutoresizingMaskIntoConstraints = false
@@ -31,7 +37,7 @@ class EnterPlayerNameViewController: UIViewController {
         
         NSLayoutConstraint.activate([
             textField.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            textField.topAnchor.constraint(equalTo: view.topAnchor, constant: 30),
+            textField.topAnchor.constraint(equalTo: view.topAnchor, constant: 100),
             // textField.heightAnchor.constraint(equalToConstant: 50),
             
             // messageLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -48,12 +54,19 @@ class EnterPlayerNameViewController: UIViewController {
         
     }
     
-    @objc func OKAction(sender: UIButton!) {
+    @objc
+    private func OKAction(sender: UIButton!) {
         if (textField.text!.isEmpty) {
-            print("Search query is empty!")
-            let alert = UIAlertController(title: "Alert", message: "Message", preferredStyle: UIAlertController.Style.alert)
-            alert.addAction(UIAlertAction(title: "Click", style: UIAlertAction.Style.default, handler: nil))
+            let alert = UIAlertController(title: "Player Name Empty", message: "Are you sure about that name?", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Try Again", style: UIAlertAction.Style.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
+        } else {
+            self.navigationController?.pushViewController(self.createAboutViewController(), animated: true)
         }
+        
+    }
+    
+    private func createAboutViewController() -> UIViewController {
+        return AboutViewController()
     }
 }
