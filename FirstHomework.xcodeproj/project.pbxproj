@@ -76,8 +76,7 @@
 			children = (
 				4E4EA85027F4F1FA0042F272 /* Fonts */,
 			);
-			name = Resources;
-			path = PresentationLayer/Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		4E4EA85027F4F1FA0042F272 /* Fonts */ = {
@@ -127,7 +126,6 @@
 		4E5F502227E6507100E43278 /* FirstHomework */ = {
 			isa = PBXGroup;
 			children = (
-				4E4EA84F27F4F1F20042F272 /* Resources */,
 				4EB25FE327F2576B0001834A /* PresentationLayer */,
 				4E5F502327E6507100E43278 /* AppDelegate.swift */,
 				4E5F502527E6507100E43278 /* SceneDelegate.swift */,
@@ -141,6 +139,7 @@
 		4EB25FE327F2576B0001834A /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
+				4E4EA84F27F4F1F20042F272 /* Resources */,
 				4EB25FE527F2578F0001834A /* ViewControllers */,
 				4EB25FE427F257830001834A /* CustomViews */,
 			);
