@@ -26,6 +26,12 @@
 		4E5F502D27E6507200E43278 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E5F502C27E6507200E43278 /* Assets.xcassets */; };
 		4E5F503027E6507200E43278 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E5F502E27E6507200E43278 /* LaunchScreen.storyboard */; };
 		4E5F503827E654CE00E43278 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F503727E654CE00E43278 /* MainViewController.swift */; };
+		4EABADE828005FCC000439A9 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EABADE728005FCC000439A9 /* PlayersViewController.swift */; };
+		4EABADEB280061E6000439A9 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EABADEA280061E6000439A9 /* UIView+Ext.swift */; };
+		4EABADED2800632D000439A9 /* CustomPlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EABADEC2800632D000439A9 /* CustomPlayerCell.swift */; };
+		4EABADF128006713000439A9 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EABADF028006713000439A9 /* Player.swift */; };
+		4EABADF328006829000439A9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EABADF228006829000439A9 /* Constants.swift */; };
+		4EABADF52800753E000439A9 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EABADF42800753E000439A9 /* PlayerViewController.swift */; };
 		4EB25FE727F25A3F0001834A /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB25FE627F25A3F0001834A /* CustomTextField.swift */; };
 		4EB25FEB27F25D750001834A /* EnterPlayerNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB25FEA27F25D750001834A /* EnterPlayerNameViewController.swift */; };
 		4EB25FED27F2691D0001834A /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB25FEC27F2691D0001834A /* CustomLabel.swift */; };
@@ -54,6 +60,12 @@
 		4E5F502F27E6507200E43278 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E5F503127E6507200E43278 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E5F503727E654CE00E43278 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4EABADE728005FCC000439A9 /* PlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
+		4EABADEA280061E6000439A9 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		4EABADEC2800632D000439A9 /* CustomPlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPlayerCell.swift; sourceTree = "<group>"; };
+		4EABADF028006713000439A9 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		4EABADF228006829000439A9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4EABADF42800753E000439A9 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		4EB25FE627F25A3F0001834A /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		4EB25FEA27F25D750001834A /* EnterPlayerNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPlayerNameViewController.swift; sourceTree = "<group>"; };
 		4EB25FEC27F2691D0001834A /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
@@ -126,6 +138,7 @@
 		4E5F502227E6507100E43278 /* FirstHomework */ = {
 			isa = PBXGroup;
 			children = (
+				4EABADEE280066F8000439A9 /* DataLayer */,
 				4EB25FE327F2576B0001834A /* PresentationLayer */,
 				4E5F502327E6507100E43278 /* AppDelegate.swift */,
 				4E5F502527E6507100E43278 /* SceneDelegate.swift */,
@@ -136,9 +149,35 @@
 			path = FirstHomework;
 			sourceTree = "<group>";
 		};
+		4EABADE9280061D1000439A9 /* Extensions+Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4EABADEA280061E6000439A9 /* UIView+Ext.swift */,
+				4EABADF228006829000439A9 /* Constants.swift */,
+			);
+			path = "Extensions+Utilities";
+			sourceTree = "<group>";
+		};
+		4EABADEE280066F8000439A9 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				4EABADEF28006704000439A9 /* Models */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		4EABADEF28006704000439A9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4EABADF028006713000439A9 /* Player.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		4EB25FE327F2576B0001834A /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
+				4EABADE9280061D1000439A9 /* Extensions+Utilities */,
 				4E4EA84F27F4F1F20042F272 /* Resources */,
 				4EB25FE527F2578F0001834A /* ViewControllers */,
 				4EB25FE427F257830001834A /* CustomViews */,
@@ -152,6 +191,7 @@
 				4EB25FE627F25A3F0001834A /* CustomTextField.swift */,
 				4EB25FEC27F2691D0001834A /* CustomLabel.swift */,
 				4EB25FEE27F26C790001834A /* CustomButton.swift */,
+				4EABADEC2800632D000439A9 /* CustomPlayerCell.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -162,6 +202,8 @@
 				4E5F503727E654CE00E43278 /* MainViewController.swift */,
 				4EB25FEA27F25D750001834A /* EnterPlayerNameViewController.swift */,
 				4E46A08627F30FAE004A0461 /* AboutViewController.swift */,
+				4EABADE728005FCC000439A9 /* PlayersViewController.swift */,
+				4EABADF42800753E000439A9 /* PlayerViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -251,12 +293,18 @@
 			files = (
 				4EB25FE727F25A3F0001834A /* CustomTextField.swift in Sources */,
 				4EB25FED27F2691D0001834A /* CustomLabel.swift in Sources */,
+				4EABADEB280061E6000439A9 /* UIView+Ext.swift in Sources */,
+				4EABADF52800753E000439A9 /* PlayerViewController.swift in Sources */,
 				4E5F503827E654CE00E43278 /* MainViewController.swift in Sources */,
+				4EABADF128006713000439A9 /* Player.swift in Sources */,
+				4EABADED2800632D000439A9 /* CustomPlayerCell.swift in Sources */,
 				4E5F502427E6507100E43278 /* AppDelegate.swift in Sources */,
+				4EABADF328006829000439A9 /* Constants.swift in Sources */,
 				4EB25FEF27F26C790001834A /* CustomButton.swift in Sources */,
 				4E5F502627E6507100E43278 /* SceneDelegate.swift in Sources */,
 				4E46A08727F30FAE004A0461 /* AboutViewController.swift in Sources */,
 				4EB25FEB27F25D750001834A /* EnterPlayerNameViewController.swift in Sources */,
+				4EABADE828005FCC000439A9 /* PlayersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

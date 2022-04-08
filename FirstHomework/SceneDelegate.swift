@@ -23,7 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     private func startNavigationController(in windowScene: UIWindowScene) {
         window = UIWindow(windowScene: windowScene)
-        let initialViewController = EnterPlayerNameViewController()
+        let initialViewController = PlayersViewController()
         let navigationController = UINavigationController(rootViewController: initialViewController)
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
