@@ -53,7 +53,7 @@
 		4E4EA85E27F4F2BF0042F272 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		4E4EA85F27F4F2C00042F272 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
 		4E4EA86027F4F2C10042F272 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
-		4E5F502027E6507100E43278 /* FirstHomework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstHomework.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E5F502027E6507100E43278 /* Academy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Academy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E5F502327E6507100E43278 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E5F502527E6507100E43278 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4E5F502C27E6507200E43278 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 		4E5F501727E6507100E43278 = {
 			isa = PBXGroup;
 			children = (
-				4E5F502227E6507100E43278 /* FirstHomework */,
+				4E5F502227E6507100E43278 /* Workspace */,
 				4E5F502127E6507100E43278 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -130,23 +130,23 @@
 		4E5F502127E6507100E43278 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4E5F502027E6507100E43278 /* FirstHomework.app */,
+				4E5F502027E6507100E43278 /* Academy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4E5F502227E6507100E43278 /* FirstHomework */ = {
+		4E5F502227E6507100E43278 /* Workspace */ = {
 			isa = PBXGroup;
 			children = (
-				4EABADEE280066F8000439A9 /* DataLayer */,
-				4EB25FE327F2576B0001834A /* PresentationLayer */,
+				4EABADF7282D413F000439A9 /* GitHubSimpleApp */,
+				4EABADF6282D3FC9000439A9 /* Homeworks */,
 				4E5F502327E6507100E43278 /* AppDelegate.swift */,
 				4E5F502527E6507100E43278 /* SceneDelegate.swift */,
 				4E5F502C27E6507200E43278 /* Assets.xcassets */,
 				4E5F502E27E6507200E43278 /* LaunchScreen.storyboard */,
 				4E5F503127E6507200E43278 /* Info.plist */,
 			);
-			path = FirstHomework;
+			path = Workspace;
 			sourceTree = "<group>";
 		};
 		4EABADE9280061D1000439A9 /* Extensions+Utilities */ = {
@@ -172,6 +172,30 @@
 				4EABADF028006713000439A9 /* Player.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		4EABADF6282D3FC9000439A9 /* Homeworks */ = {
+			isa = PBXGroup;
+			children = (
+				4EB25FE327F2576B0001834A /* PresentationLayer */,
+				4EABADEE280066F8000439A9 /* DataLayer */,
+			);
+			path = Homeworks;
+			sourceTree = "<group>";
+		};
+		4EABADF7282D413F000439A9 /* GitHubSimpleApp */ = {
+			isa = PBXGroup;
+			children = (
+				4EABADF8282D41DB000439A9 /* DataLayer */,
+			);
+			path = GitHubSimpleApp;
+			sourceTree = "<group>";
+		};
+		4EABADF8282D41DB000439A9 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataLayer;
 			sourceTree = "<group>";
 		};
 		4EB25FE327F2576B0001834A /* PresentationLayer */ = {
@@ -211,9 +235,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4E5F501F27E6507100E43278 /* FirstHomework */ = {
+		4E5F501F27E6507100E43278 /* Academy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4E5F503427E6507200E43278 /* Build configuration list for PBXNativeTarget "FirstHomework" */;
+			buildConfigurationList = 4E5F503427E6507200E43278 /* Build configuration list for PBXNativeTarget "Academy" */;
 			buildPhases = (
 				4E5F501C27E6507100E43278 /* Sources */,
 				4E5F501D27E6507100E43278 /* Frameworks */,
@@ -223,9 +247,9 @@
 			);
 			dependencies = (
 			);
-			name = FirstHomework;
+			name = Academy;
 			productName = FirstHomework;
-			productReference = 4E5F502027E6507100E43278 /* FirstHomework.app */;
+			productReference = 4E5F502027E6507100E43278 /* Academy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -243,7 +267,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4E5F501B27E6507100E43278 /* Build configuration list for PBXProject "FirstHomework" */;
+			buildConfigurationList = 4E5F501B27E6507100E43278 /* Build configuration list for PBXProject "Academy" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -256,7 +280,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4E5F501F27E6507100E43278 /* FirstHomework */,
+				4E5F501F27E6507100E43278 /* Academy */,
 			);
 		};
 /* End PBXProject section */
@@ -446,7 +470,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FirstHomework/Info.plist;
+				INFOPLIST_FILE = Workspace/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -456,7 +480,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.andreism.FirstHomework;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andreism.Academy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -472,7 +496,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FirstHomework/Info.plist;
+				INFOPLIST_FILE = Workspace/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -482,7 +506,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.andreism.FirstHomework;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andreism.Academy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -493,7 +517,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4E5F501B27E6507100E43278 /* Build configuration list for PBXProject "FirstHomework" */ = {
+		4E5F501B27E6507100E43278 /* Build configuration list for PBXProject "Academy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4E5F503227E6507200E43278 /* Debug */,
@@ -502,7 +526,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4E5F503427E6507200E43278 /* Build configuration list for PBXNativeTarget "FirstHomework" */ = {
+		4E5F503427E6507200E43278 /* Build configuration list for PBXNativeTarget "Academy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4E5F503527E6507200E43278 /* Debug */,
