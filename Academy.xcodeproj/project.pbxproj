@@ -32,6 +32,9 @@
 		4EABADF128006713000439A9 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EABADF028006713000439A9 /* Player.swift */; };
 		4EABADF328006829000439A9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EABADF228006829000439A9 /* Constants.swift */; };
 		4EABADF52800753E000439A9 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EABADF42800753E000439A9 /* PlayerViewController.swift */; };
+		4EABADFD282D47A7000439A9 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EABADFC282D47A7000439A9 /* SearchViewController.swift */; };
+		4EABAE00282D55F7000439A9 /* GitHubTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EABADFF282D55F7000439A9 /* GitHubTabBarController.swift */; };
+		4EABAE02282D56EA000439A9 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EABAE01282D56EA000439A9 /* FavoritesViewController.swift */; };
 		4EB25FE727F25A3F0001834A /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB25FE627F25A3F0001834A /* CustomTextField.swift */; };
 		4EB25FEB27F25D750001834A /* EnterPlayerNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB25FEA27F25D750001834A /* EnterPlayerNameViewController.swift */; };
 		4EB25FED27F2691D0001834A /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB25FEC27F2691D0001834A /* CustomLabel.swift */; };
@@ -66,6 +69,9 @@
 		4EABADF028006713000439A9 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		4EABADF228006829000439A9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4EABADF42800753E000439A9 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		4EABADFC282D47A7000439A9 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		4EABADFF282D55F7000439A9 /* GitHubTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubTabBarController.swift; sourceTree = "<group>"; };
+		4EABAE01282D56EA000439A9 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		4EB25FE627F25A3F0001834A /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		4EB25FEA27F25D750001834A /* EnterPlayerNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPlayerNameViewController.swift; sourceTree = "<group>"; };
 		4EB25FEC27F2691D0001834A /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
@@ -186,6 +192,8 @@
 		4EABADF7282D413F000439A9 /* GitHubSimpleApp */ = {
 			isa = PBXGroup;
 			children = (
+				4EABADFA282D45BB000439A9 /* PresentationLayer */,
+				4EABADF9282D45AE000439A9 /* DomainLayer */,
 				4EABADF8282D41DB000439A9 /* DataLayer */,
 			);
 			path = GitHubSimpleApp;
@@ -196,6 +204,39 @@
 			children = (
 			);
 			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		4EABADF9282D45AE000439A9 /* DomainLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DomainLayer;
+			sourceTree = "<group>";
+		};
+		4EABADFA282D45BB000439A9 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				4EABADFE282D5464000439A9 /* TabBarController */,
+				4EABADFB282D4753000439A9 /* ViewControllers */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		4EABADFB282D4753000439A9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4EABADFC282D47A7000439A9 /* SearchViewController.swift */,
+				4EABAE01282D56EA000439A9 /* FavoritesViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4EABADFE282D5464000439A9 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				4EABADFF282D55F7000439A9 /* GitHubTabBarController.swift */,
+			);
+			path = TabBarController;
 			sourceTree = "<group>";
 		};
 		4EB25FE327F2576B0001834A /* PresentationLayer */ = {
@@ -315,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EABADFD282D47A7000439A9 /* SearchViewController.swift in Sources */,
 				4EB25FE727F25A3F0001834A /* CustomTextField.swift in Sources */,
 				4EB25FED27F2691D0001834A /* CustomLabel.swift in Sources */,
 				4EABADEB280061E6000439A9 /* UIView+Ext.swift in Sources */,
@@ -322,8 +364,10 @@
 				4E5F503827E654CE00E43278 /* MainViewController.swift in Sources */,
 				4EABADF128006713000439A9 /* Player.swift in Sources */,
 				4EABADED2800632D000439A9 /* CustomPlayerCell.swift in Sources */,
+				4EABAE02282D56EA000439A9 /* FavoritesViewController.swift in Sources */,
 				4E5F502427E6507100E43278 /* AppDelegate.swift in Sources */,
 				4EABADF328006829000439A9 /* Constants.swift in Sources */,
+				4EABAE00282D55F7000439A9 /* GitHubTabBarController.swift in Sources */,
 				4EB25FEF27F26C790001834A /* CustomButton.swift in Sources */,
 				4E5F502627E6507100E43278 /* SceneDelegate.swift in Sources */,
 				4E46A08727F30FAE004A0461 /* AboutViewController.swift in Sources */,

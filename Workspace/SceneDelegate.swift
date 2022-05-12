@@ -25,7 +25,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: windowScene)
         let initialViewController = PlayersViewController()
         let navigationController = UINavigationController(rootViewController: initialViewController)
-        window?.rootViewController = navigationController
+        // window?.rootViewController = navigationController
+        
+        let vc = SearchViewController()
+        window?.rootViewController = GitHubTabBarController()
         window?.makeKeyAndVisible()
     }
 
